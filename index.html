@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail Monitor</title>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- tailwind link-->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,15 +21,35 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                    }
+                        green: "#4BA87D",
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        raleway: ['Raleway', 'sans-serif'],
+                    },
                 }
             }
-        }
+        };
     </script>
 </head>
 
 <body>
+    <!-- navbar start -->
+    <header class="w-full h-20 flex justify-center absolute bg-green text-white">
+        <nav class="w-4/5 items-center font-playfair uppercase flex justify-between">
+            <h1 class="text-3xl font-bold">Mail Monitor</h1>
+            <ul class="md:flex gap-x-5 text-xl hidden font-medium">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Services</li>
+                <li>Partners</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
 
 </body>
 
